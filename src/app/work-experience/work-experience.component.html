@@ -1,0 +1,9 @@
+<section class="cv-section">
+  <h3 class="cv-section-title">Experiencia Laboral</h3>
+  <div *ngFor="let exp of workExperience">
+    <p><strong>{{ exp.startDate }} - {{ exp.endDate }}</strong></p>
+    <p><strong>{{ exp.position }}</strong> - {{ exp.company }}</p>
+    <p><em>{{ exp.location }}</em></p>
+    <p>{{ exp.accomplishments }}</p>
+  </div>
+</section>

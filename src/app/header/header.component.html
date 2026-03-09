@@ -1,0 +1,27 @@
+<div class="cv-header">
+  <img [src]="header?.photoUrl" class="cv-photo" alt="Foto de perfil de {{ header?.name }}" />
+  <h1 class="cv-name">{{ header?.name }}</h1>
+  <p class="cv-title">{{ header?.goalLife }}</p>
+
+  <div class="cv-section">
+    <h3 class="cv-section-title">Contacto</h3>
+    <div class="cv-contact">
+      <div class="cv-contact-item">
+        <i class="fas fa-envelope cv-contact-icon"></i>
+        <span>{{ header?.email }}</span>
+      </div>
+      <div class="cv-contact-item">
+        <i class="fas fa-phone cv-contact-icon"></i>
+        <span>{{ header?.phoneNumber }}</span>
+      </div>
+      <div class="cv-contact-item">
+        <i class="fas fa-map-marker-alt cv-contact-icon"></i>
+        <span>{{ header?.location }}</span>
+      </div>
+      <div class="cv-contact-item">
+        <i class="fab fa-twitter cv-contact-icon"></i>
+        <span>{{ header?.socialNetwork }}</span>
+      </div>
+    </div>
+  </div>
+</div>

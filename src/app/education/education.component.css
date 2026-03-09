@@ -1,0 +1,29 @@
+.edu-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.edu-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.field, .institution, .dates {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.logros-title {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.logros {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}

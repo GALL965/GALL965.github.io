@@ -1,0 +1,30 @@
+.exp-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.exp-period {
+  color: #00a8a8;
+  font-weight: bold;
+  margin: 0;
+}
+
+.exp-position {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+.exp-location {
+  font-style: italic;
+  font-size: 13px;
+  margin: 2px 0 5px 0;
+  color: #666;
+}
+
+.exp-item p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #444;
+}

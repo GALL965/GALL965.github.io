@@ -1,0 +1,8 @@
+<section class="cv-section">
+  <h3 class="cv-section-title">Idiomas</h3>
+  <div *ngFor="let lang of languages">
+    <p><strong>{{ lang.name }}</strong></p>
+    <p>Nivel: {{ lang.proficiency }}</p>
+    <p>Certificación: {{ lang.certification }}</p>
+  </div>
+</section>

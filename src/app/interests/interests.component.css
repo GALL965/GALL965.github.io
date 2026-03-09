@@ -1,0 +1,22 @@
+.cv-section {
+  margin-top: 30px;
+}
+
+.interest-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.interest-item h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.interest-item p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #f0f0f0;
+}
