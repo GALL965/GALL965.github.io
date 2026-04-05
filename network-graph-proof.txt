@@ -1,0 +1,2 @@
+This file exists only to create a visible branch divergence in GitHub's Network Graph.
+Date: 2026-04-05
