@@ -11,12 +11,29 @@ import { map } from 'rxjs/operators';
 export class WorkExperienceComponent {
   workExperience: WorkExperience[] = [];
 
+  private normalizeAccomplishments(value: unknown): string[] {
+    if (Array.isArray(value)) {
+      return value
+        .map(v => (typeof v === 'string' ? v.trim() : ''))
+        .filter(Boolean);
+    }
+    if (typeof value === 'string') {
+      return value
+        .split(/\r?\n|,/g)
+        .map(v => v.trim())
+        .filter(Boolean);
+    }
+    return [];
+  }
+
   constructor(public workExperienceService: WorkExperienceService) {
     console.log(this.workExperienceService);
     this.workExperienceService.getWorkExperience().snapshotChanges().pipe(
       map(changes =>
         changes.map(c => ({
-          id: c.payload.doc.id, ...c.payload.doc.data()
+          id: c.payload.doc.id,
+          ...c.payload.doc.data(),
+          accomplishments: this.normalizeAccomplishments((c.payload.doc.data() as any)?.accomplishments)
         }))
       )
     ).subscribe(data => {

@@ -5,5 +5,5 @@ export class Education {
   degree?: string;
   fieldOfStudy?: string;
   institution?: string;
-  accomplishments?: string;
+  accomplishments?: string[];
 }

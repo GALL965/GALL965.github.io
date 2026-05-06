@@ -5,6 +5,11 @@
     <p>{{ edu.fieldOfStudy }}</p>
     <p>{{ edu.institution }}</p>
     <p>{{ edu.startDate }} - {{ edu.endDate }}</p>
-    <p><strong>Logros:</strong> {{ edu.accomplishments }}</p>
+    <div>
+      <strong>Logros:</strong>
+      <ul *ngIf="edu.accomplishments?.length">
+        <li *ngFor="let acc of edu.accomplishments">{{ acc }}</li>
+      </ul>
+    </div>
   </div>
 </section>
